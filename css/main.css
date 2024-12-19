@@ -1,0 +1,27 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/signika-v25-latin-600.woff2') format('woff2'); 
+  }
+
+body{
+    font-family: 'Signika', sans-serif;
+}
+
+.login-bg{
+  height: 100vh;
+  background-image: url(../images/Login-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.img{
+  height: 100vh;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+

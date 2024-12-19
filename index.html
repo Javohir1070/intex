@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/products-icon.svg">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <title>Login</title>
+</head>
+<body class="login-bg flex items-center justify-center">
+    <div class="w-[621px] bg-white pt-[35px] pb-[48px] rounded-[25px] flex flex-col items-center">
+      <img class="mb-[17px]" src="./images/logo.svg" alt="logo" width="421" height="72">
+      <p class="text-[25px] font-bold text-[#A3A3A3] mb-[70px] text-center leading-[29px]">Введите имя пользователя и пароль, чтобы получить доступ к системе.</p>
+      <form class="login-form flex flex-col items-center" autocomplete="off">
+        <input required name="username" class="outline-none text-center py-[15px] shadow shadow-[#CBCBCB] border-[1px] border-[#CBCBCB] rounded-[17px] w-[359px] text-[#A3A3A3] placeholder:font-bold placeholder:text-[25px] font-bold  text-[25px] " type="text" placeholder="Имя пользователя">
+        <input required name="password" class="mt-[16px] outline-none text-center py-[15px] shadow shadow-[#CBCBCB] border-[1px] border-[#CBCBCB] rounded-[17px] w-[359px] text-[#A3A3A3] placeholder:font-bold placeholder:text-[25px] font-bold  text-[25px] " type="password" placeholder="Пароль">
+        <button class="login-btn mt-[47px] py-[8px] w-[237px]  bg-[#3F8C8E] text-white font-bold text-[25px] text-center rounded-[10px]" type="submit">Войти </button>
+      </form>
+    </div>
+
+
+    <script src="./js/login.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+</body>
+</html>
